@@ -4,8 +4,5 @@
 <link rel="stylesheet" href="/app.css" />
 
 <body>
-    <header>
-        @yield("head")
-    </header>
-    @yield("content")
+    {{$slot}}
 </body>
