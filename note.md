@@ -10,3 +10,8 @@
 -   x-slot
 -   attributes for blade component
 -   folder for blade component
+
+## database
+
+-   difference between string and text. String will max out at 250 characters
+-   model name should be singular of table name
