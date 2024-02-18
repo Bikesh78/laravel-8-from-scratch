@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    // protected $fillable = ['body', 'title', 'excerpt'];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }
