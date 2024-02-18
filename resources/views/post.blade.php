@@ -1,14 +1,16 @@
-<!doctype html>
+@extends ('layout')
 
-<title>Detailed Post</title>
-<link rel="stylesheet" href="/app.css" />
+@section("head")
+<h1>Detailed post</h1>
+@endsection
 
+@section ('content')
 
-<body>
-    <article>
-        <!-- <h1><?= $post->title; ?></h1> -->
-        <h1>{{$post->title}}</h1>
-        <!-- <div><?= $post->body; ?></div> -->
-        <div>{!! $post->body!!}</div>
-    </article>
-</body>
+<article>
+    <!-- <h1><?= $post->title; ?></h1> -->
+    <h1>{{$post->title}}</h1>
+    <!-- <div><?= $post->body; ?></div> -->
+    <div>{!! $post->body!!}</div>
+</article>
+
+@endsection

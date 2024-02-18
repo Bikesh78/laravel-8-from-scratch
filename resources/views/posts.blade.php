@@ -1,15 +1,13 @@
-<!doctype html>
+@extends('layout')
 
-<title>HEllo World</title>
-<link rel="stylesheet" href="/app.css" />
+@section("content")
 
+@foreach ($posts as $post)
+<article>
+    <h1><a href="post/{{$post->slug}}"> {{$post->title}}</a></h1>
 
-<body>
-    @foreach ($posts as $post)
-    <article>
-        <h1><a href="post/{{$post->slug}}"> {{$post->title}}</a></h1>
+    <div><?= $post->excerpt ?></div>
+</article>
+@endforeach
 
-        <div><?= $post->excerpt ?></div>
-    </article>
-    @endforeach
-</body>
+@endsection
