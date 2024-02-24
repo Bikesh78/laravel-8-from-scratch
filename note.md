@@ -19,3 +19,7 @@
 ## three options for mass assingment
 
 -   protected, guarded or turn off mass assignment. You can turn off mass assignment by providing empty array in guarded property
+
+## Command to create model with migration file
+
+-   php artisan mkae:model -m
